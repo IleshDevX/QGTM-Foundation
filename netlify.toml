@@ -5,7 +5,7 @@ publish = "dist/client"
 node_version = "22.0.0"
 
 [[headers]]
-for = "/dist/*"
+for = "/assets/*"
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
