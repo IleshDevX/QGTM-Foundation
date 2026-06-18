@@ -1,8 +1,10 @@
 [build]
-command = "npm run build"
-functions = ".output/server"
-publish = ".output/public"
-node_version = "22.0.0"
+command = "npm run build:netlify"
+functions = ".netlify/functions"
+publish = ".netlify/output/public"
+
+[build.environment]
+NODE_VERSION = "22"
 
 [[headers]]
 for = "/assets/*"

@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && nitro build",
-    "build:dev": "vite build --mode development && nitro build --preset netlify",
+    "build": "vite build",
+    "build:vercel": "vite build",
+    "build:netlify": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."
