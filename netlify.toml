@@ -1,5 +1,5 @@
 [build]
-command = "bun run build"
+command = "npm run build"
 functions = ".output/server"
 publish = ".output/public"
 node_version = "22.0.0"
