@@ -18,9 +18,9 @@ export default defineConfig({
     },
   },
   nitro: {
-    preset: "vercel",
+    preset: "netlify",
     output: {
-      dir: ".vercel/output",
+      dir: ".output",
     },
   },
 });

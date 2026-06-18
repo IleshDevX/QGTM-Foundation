@@ -1,7 +1,7 @@
 [build]
 command = "npm run build:netlify"
-functions = ".netlify/functions"
-publish = ".netlify/output/public"
+functions = ".output/server"
+publish = "dist"
 
 [build.environment]
 NODE_VERSION = "22"
