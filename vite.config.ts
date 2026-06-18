@@ -12,4 +12,15 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    ssr: {
+      external: ["react", "react-dom"],
+    },
+  },
+  nitro: {
+    presets: ["netlify"],
+    output: {
+      dir: ".output",
+    },
+  },
 });

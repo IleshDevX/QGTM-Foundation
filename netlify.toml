@@ -1,12 +1,8 @@
 [build]
 command = "bun run build"
-publish = "dist"
+functions = ".output/server"
+publish = "dist/client"
 node_version = "22.0.0"
-
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
 
 [[headers]]
 for = "/dist/*"
